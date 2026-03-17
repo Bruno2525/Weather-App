@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #042a4d, #109ca3);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    margin: 0;
+}
+
+/* container principal */
+.container{
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    color: white;
+}
+
+.container h1{
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.subtitle{
+    font-size: 15px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+/* área de busca */
+.search{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#cityInput{
+    flex: 1;
+    padding: 12px 14px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+#cityInput::placeholder{
+    color: #777;
+}
+
+/* botão */
+button{
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #2196f3;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    background: #f1f9ff;
+}
+
+/* resultado do clima */
+.weather-result{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.12);
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#weatherType{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#cityName{
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+#humidity,
+#wind,
+#time{
+    font-size: 16px;
+    opacity: 0.95;
+}
+
+/* Carregando */
+#loading{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fffde7;
+}
+
